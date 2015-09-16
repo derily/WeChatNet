@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile-1.4.5.js"></script>
+    <title></title>
+</head>
+<body>
+    <div data-role="page" id="pageone" data-add-back-btn="true" data-back-btn-text="后退">
+        <div data-role="header">
+            <a href="#" data-rel="back">Log out</a>
+            <h1>页头</h1>
+            <a href="settings" data-icon="gear" data-theme="c">Settings</a>
+        </div>
+        <div data-role="content" data-theme="e">
+            <!-- <div class="ui-input-btn ui-btn ui-shadow">
+                 Enhanced
+                 <input type="button" data-enhanced="true" value="Enhanced">
+             </div>-->
+            <ul data-role="listview" data-inset="true" data-theme="c">
+                <li data-icon="false"><a href="#pagetwo" data-rel="dialog" data-transition="pop"><h1>item one</h1></a><a href=""></a></li>
+                <li><a href=""><h3>Soda</h3><p>this is my home </p><span class="ui-li-aside">$1.00</span></a></li>
+                <li>item three</li>
+                <li>item four</li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li> <a href="home" data-icon="home" class="ui-btn-active">Home</a></li>
+                    <li> <a href="healthbar" data-icon="search">HealthBar</a></li>
+                    <li><a href="my" data-icon="info">关于我</a></li>
+                    <li><a href="#news" data-icon="refresh" data-iconpos="bottom">News</a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="pagetwo" data-title="第二页">
+        <div data-role="header">
+            <h1>页头</h1>
+        </div>
+        <div data-role="content" data-theme="e">
+            <div class="ui-input-btn ui-btn ui-shadow">
+                第二页
+                <input type="button" data-enhanced="true" value="Enhanced">
+            </div>
+            <div data-role="listview">
+                <li><a href="#">item one</a></li>
+            </div>
+
+        </div>
+        <div data-role="footer">
+            <h4> 页脚</h4>
+        </div>
+    </div>
+</body>
+</html>
