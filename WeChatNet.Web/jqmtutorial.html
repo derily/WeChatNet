@@ -16,7 +16,7 @@
     <title></title>
 </head>
 <body>
-    <div data-role="page" id="pageone">
+    <div data-role="page" id="pageone" data-dom-cache="true"><!--应用data-dom-cache属性缓存频繁访问的页面-->
         <div data-role="header">
             <!--<a href="#" data-rel="back">Log out</a>-->
             <h1>产品列表</h1>
@@ -29,10 +29,10 @@
              </div>-->
             <ul data-role="listview" data-theme="d">
                 <li data-role="list-divider" role="heading">团体护理产品<span class="ui-li-count">2</span></li>
-                <li><a href="#pagetwo"><h5>服务一</h5><p>您好您好您好您好您好您好您好您好您好您好您好您好您好您好</p></a></li>
-                <li><a href="#pagetwo"><h5>服务二</h5><p>您好您好您好您好您好您好您好您好您好您好您好您好您好您好</p></a></li>
+                <li><a href="#pagetwo" data-transition="slidedown"><h5>服务一</h5><p>您好您好您好您好您好您好您好您好您好您好您好您好您好您好</p></a></li>
+                <li><a href="#pagetwo" data-transition="slideup"><h5>服务二</h5><p>您好您好您好您好您好您好您好您好您好您好您好您好您好您好</p></a></li>
                 <li data-role="list-divider" role="heading">个人护理产品<span class="ui-li-count">2</span></li>
-                <li><a href="#pagetwo"><h5>服务一</h5><p>您好您好您好您好您好您好您好您好您好您好您好您好您好您好</p></a></li>
+                <li><a href="#pagetwo" data-rel="dialog"><h5>服务一</h5><p>您好您好您好您好您好您好您好您好您好您好您好您好您好您好</p></a></li>
                 <li><a href="#pagetwo"><h5>服务二</h5><p>您好您好您好您好您好您好您好您好您好您好您好您好您好您好</p></a></li>
             </ul>
             </div>
@@ -48,22 +48,14 @@
             </div>
         </div>-->
     </div>
-    <div data-role="page" id="pagetwo" data-title="第二页">
-        <div data-role="header" data-add-back-btn="true" data-back-btn-text="后退">
-            <h1>页头</h1>
+    <div data-role="page" id="pagetwo" data-title="预约服务" data-inset="false">
+        <div data-role="header">
+            <h1>预约服务</h1>
         </div>
         <div data-role="content" data-theme="e">
-            <div class="ui-input-btn ui-btn ui-shadow">
-                第二页
-                <input type="button" data-enhanced="true" value="Enhanced">
-            </div>
-            <div data-role="listview">
-                <li><a href="#">item one</a></li>
-            </div>
-
-        </div>
-        <div data-role="footer">
-            <h4> 页脚</h4>
+            <a href="tel:+18857879279">拨打服务热线</a>
+            <a href="mailto:click.world@hotmail.com">发送邮件</a>
+            <a href="sms:+18857879279" data-role="button">发送短信</a>
         </div>
     </div>
 </body>
