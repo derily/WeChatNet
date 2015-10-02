@@ -265,9 +265,12 @@
     <Content Include="css\themes\default\jquery.mobile.inline-svg-1.4.5.min.css" />
     <Content Include="css\themes\default\jquery.mobile.structure-1.4.5.min.css" />
     <Content Include="css\themes\default\jquery.mobile.theme-1.4.5.min.css" />
+    <Content Include="jqmtutorial.html" />
     <Content Include="js\jquery.js" />
     <Content Include="js\jquery.mobile-1.4.5.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -278,6 +281,7 @@
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
