@@ -16,8 +16,8 @@
     <title></title>
 </head>
 <body>
-    <div data-role="page" id="pageone" data-dom-cache="true"><!--应用data-dom-cache属性缓存频繁访问的页面-->
-        <div data-role="header">
+    <div data-role="page" id="pageone" data-fullscreen="true" data-dom-cache="true"><!--应用data-dom-cache属性缓存频繁访问的页面-->
+        <div data-role="header" data-position="fixed">
             <!--<a href="#" data-rel="back">Log out</a>-->
             <h1>产品列表</h1>
             <!--<a href="settings" data-icon="gear" data-theme="c">Settings</a>-->
@@ -34,19 +34,19 @@
                 <li data-role="list-divider" role="heading">个人护理产品<span class="ui-li-count">2</span></li>
                 <li><a href="#pagetwo" data-rel="dialog"><h5>服务一</h5><p>您好您好您好您好您好您好您好您好您好您好您好您好您好您好</p></a></li>
                 <li><a href="#pagetwo"><h5>服务二</h5><p>您好您好您好您好您好您好您好您好您好您好您好您好您好您好</p></a></li>
+                <li data-role="list-divider" role="heading">个人护理产品<span class="ui-li-count">2</span></li>
+                <li><a href="#pagetwo" data-rel="dialog"><h5>服务一</h5><p>您好您好您好您好您好您好您好您好您好您好您好您好您好您好</p></a></li>
+                <li><a href="#pagetwo"><h5>服务二</h5><p>您好您好您好您好您好您好您好您好您好您好您好您好您好您好</p></a></li>
             </ul>
-            </div>
         </div>
-        <!--<div data-role="footer" data-position="fixed">
+        <div data-role="footer" data-position="fixed">
             <div data-role="navbar">
                 <ul>
-                    <li> <a href="home" data-icon="home" class="ui-btn-active">Home</a></li>
-                    <li> <a href="healthbar" data-icon="search">HealthBar</a></li>
-                    <li><a href="my" data-icon="info">关于我</a></li>
-                    <li><a href="#news" data-icon="refresh" data-iconpos="bottom">News</a> </li>
+                    <li> <a href="home" class="ui-btn-active">服务列表</a></li>
+                    <li> <a href="healthbar">已预约</a></li>
                 </ul>
             </div>
-        </div>-->
+        </div>
     </div>
     <div data-role="page" id="pagetwo" data-title="预约服务" data-inset="false">
         <div data-role="header">
