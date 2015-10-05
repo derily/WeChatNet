@@ -9,7 +9,7 @@
     $(document).bind("mobileinit", function () {
         $.mobile.activeBtnClass = "active";
         $.mobile.pageLoadErrorMessage = "加载页面出错!";
-        
+        $.mobile.button.prototype.options.corners = false; 
     });
     </script>
     <script src="js/jquery.mobile-1.4.5.js"></script>
@@ -27,7 +27,7 @@
                  Enhanced
                  <input type="button" data-enhanced="true" value="Enhanced">
              </div>-->
-            <ul data-role="listview" data-theme="d">
+            <ul data-role="listview" data-theme="d" data-filter="true">
                 <li data-role="list-divider" role="heading">团体护理产品<span class="ui-li-count">2</span></li>
                 <li><a href="#pagetwo" data-transition="slidedown"><h5>服务一</h5><p>您好您好您好您好您好您好您好您好您好您好您好您好您好您好</p></a></li>
                 <li><a href="#pagetwo" data-transition="slideup"><h5>服务二</h5><p>您好您好您好您好您好您好您好您好您好您好您好您好您好您好</p></a></li>
@@ -53,9 +53,47 @@
             <h1>预约服务</h1>
         </div>
         <div data-role="content" data-theme="e">
+            <p>此处显示服务详情……</p>
+            <p>请您在以下表单填写预约信息以便我们为您制定计划</p>
+            <div data-role="fieldcontain">
+                <label for="orderDate">预约时间</label>
+                <input type="date" id="orderDate" min="2015-10-7" />
+            </div>
+            <div data-role="fieldcontain">
+                <label for="symptom">症状</label>
+                <input type="text" id="symptom" />
+            </div>
+            <div data-role="fieldcontain">
+                <label for="hospital">医院</label>
+                <input type="text" id="hospital" />
+            </div>
+            <div data-role="fieldcontain">
+                <label for="department">科室</label>
+                <input type="text" id="department" />
+            </div>
+            <div data-role="fieldcontain">
+                <label for="doctor">医生</label>
+                <input type="text" id="doctor" />
+            </div>
+            <div data-role="fieldcontain">
+                <label for="medicine">药品</label>
+                <input type="text" id="medicine" />
+            </div>
+            <div data-role="fieldcontain">
+                <label for="quantity">数量</label>
+                <input type="text" id="quantity" />
+            </div>
+            <input type="submit" value="提交预约"/>
+            <!--<section class="ui-grid-a">
+                <div class="ui-block-a">预约时间</div>
+                <div class="ui-block-b"><button data-theme="d" data-inline="true">按钮</button></div>
+            </section>
+                <a href="#" class="ui-btn ui-shadow ui-btn-inline">Button1</a>
+            <a href="#" class="ui-btn ui-btn-inline">Button2</a>
+            <a href="#" class="ui-btn ui-btn-inline">Button3</a>
             <a href="tel:+18857879279">拨打服务热线</a>
             <a href="mailto:click.world@hotmail.com">发送邮件</a>
-            <a href="sms:+18857879279" data-role="button">发送短信</a>
+            <a href="sms:+18857879279" data-role="button">发送短信</a>-->
         </div>
     </div>
 </body>
