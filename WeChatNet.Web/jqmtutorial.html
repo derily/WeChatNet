@@ -11,26 +11,12 @@
         $.mobile.pageLoadErrorMessage = "加载页面出错!";
         $.mobile.button.prototype.options.corners = false;
         $.mobile.selectmenu.prototype.options.corners = false;
+        $.mobile.page.prototype.options.degradeInputs.date = true;
     });
     </script>
     <script src="js/jquery.mobile-1.4.5.js"></script>
-    <script>
-
-        //$('#pagetwo').pagecontainer({
-        //    load: function (event, ui) {
-        //        var dt = new Date();
-        //        dt.setDate(dt.getDate() + 2);
-        //        //var ndt = new Date(year + month + day);
-        //        $("input[type='date']").attr(min, dt.toLocaleDateString());
-        //    },
-        //    show: function (event, ui) {
-        //        var dt = new Date();
-        //        dt.setDate(dt.getDate() + 2);
-        //        //var ndt = new Date(year + month + day);
-        //        $("input[type='date']").attr(min, dt.toLocaleDateString());
-        //    }
-        //});
-    </script>
+    <script src="js/jqm-datebox.core.min.js"></script>
+    <script src="js/jqm-datebox.mode.datebox.min.js"></script>
     <title></title>
 </head>
 <body>
@@ -76,7 +62,8 @@
             <form action="" method="post">
                 <div data-role="fieldcontain">
                     <label for="orderDate">预约时间</label>
-                    <input type="date" name="orderDate">
+                    <!--<input type="date" name="orderDate">-->
+                    <input type="text" id="orderDate" name="orderDate" data-role="datebox" data-options='{"mode":"datebox","dateFormat": "YYYY-DD-MM"}' />
                 </div>
                 <div data-role="fieldcontain">
                     <label for="symptom">症状</label>
@@ -126,6 +113,7 @@
         var month = dt.getMonth()+1;
         var day = dt.getDate()
         var dtFormated = year + "-" + (month < 10 ? ('0' + month) : month )+ "-" + (day < 10 ? ('0' + day ): day);
-        $("input[type='date']").attr('min', dtFormated);
+        $("#orderDate").attr('min', dtFormated);
+        $("#orderDate").datebox('applyMinMax');
     });
 </script>
