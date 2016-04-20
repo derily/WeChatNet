@@ -306,9 +306,9 @@
     <Content Include="css\themes\default\jquery.mobile.theme-1.4.5.min.css" />
     <Content Include="estore.html" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="images\dog-1.jpeg" />
-    <Content Include="images\dog-2.jpeg" />
-    <Content Include="images\dog-3.jpeg" />
+    <Content Include="images\dog-1.jpg" />
+    <Content Include="images\dog-2.jpg" />
+    <Content Include="images\dog-3.jpg" />
     <Content Include="jqmtutorial.html" />
     <Content Include="js\databox-main.js" />
     <Content Include="js\jqm-datebox.core.min.js" />
