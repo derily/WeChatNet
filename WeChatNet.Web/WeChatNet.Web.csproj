@@ -57,6 +57,44 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="content\assets\brand\bootstrap-outline.svg" />
+    <Content Include="content\assets\brand\bootstrap-punchout.svg" />
+    <Content Include="content\assets\brand\bootstrap-solid.svg" />
+    <Content Include="content\assets\css\docs.min.css" />
+    <Content Include="content\assets\css\ie10-viewport-bug-workaround.css" />
+    <Content Include="content\assets\css\src\docs.css" />
+    <Content Include="content\assets\css\src\pygments-manni.css" />
+    <Content Include="content\assets\flash\ZeroClipboard.swf" />
+    <Content Include="content\assets\img\components.png" />
+    <Content Include="content\assets\img\devices.png" />
+    <Content Include="content\assets\img\expo-lyft.jpg" />
+    <Content Include="content\assets\img\expo-newsweek.jpg" />
+    <Content Include="content\assets\img\expo-riot.jpg" />
+    <Content Include="content\assets\img\expo-vogue.jpg" />
+    <Content Include="content\assets\img\sass-less.png" />
+    <Content Include="content\assets\js\customize.min.js" />
+    <Content Include="content\assets\js\docs.min.js" />
+    <Content Include="content\assets\js\ie-emulation-modes-warning.js" />
+    <Content Include="content\assets\js\ie10-viewport-bug-workaround.js" />
+    <Content Include="content\assets\js\ie8-responsive-file-warning.js" />
+    <Content Include="content\assets\js\raw-files.min.js" />
+    <Content Include="content\assets\js\src\application.js" />
+    <Content Include="content\assets\js\src\customizer.js" />
+    <Content Include="content\assets\js\vendor\anchor.js" />
+    <Content Include="content\assets\js\vendor\autoprefixer.js" />
+    <Content Include="content\assets\js\vendor\Blob.js" />
+    <Content Include="content\assets\js\vendor\FileSaver.js" />
+    <Content Include="content\assets\js\vendor\holder.min.js" />
+    <Content Include="content\assets\js\vendor\jquery.min.js" />
+    <Content Include="content\assets\js\vendor\jszip.min.js" />
+    <Content Include="content\assets\js\vendor\less.min.js" />
+    <Content Include="content\assets\js\vendor\uglify.min.js" />
+    <Content Include="content\assets\js\vendor\ZeroClipboard.min.js" />
+    <Content Include="content\bootstrap-theme.css" />
+    <Content Include="content\bootstrap-theme.min.css" />
+    <Content Include="content\bootstrap.css" />
+    <Content Include="content\bootstrap.min.css" />
+    <Content Include="css\carousel.css" />
     <Content Include="css\jqm-datebox.min.css" />
     <Content Include="css\themes\default\images\ajax-loader.gif" />
     <Content Include="css\themes\default\images\icons-png\action-black.png" />
@@ -266,6 +304,8 @@
     <Content Include="css\themes\default\jquery.mobile.inline-svg-1.4.5.min.css" />
     <Content Include="css\themes\default\jquery.mobile.structure-1.4.5.min.css" />
     <Content Include="css\themes\default\jquery.mobile.theme-1.4.5.min.css" />
+    <Content Include="estore.html" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="jqmtutorial.html" />
     <Content Include="js\databox-main.js" />
     <Content Include="js\jqm-datebox.core.min.js" />
@@ -275,6 +315,21 @@
     <Content Include="js\jquery.js" />
     <Content Include="js\jquery.mobile-1.4.5.js" />
     <Content Include="js\jquery.mobile.datebox.i18n.zh-CN.utf8.min.js" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="content\bootstrap-theme.min.css.map" />
+    <Content Include="content\bootstrap-theme.css.map" />
+    <Content Include="content\bootstrap.min.css.map" />
+    <Content Include="content\bootstrap.css.map" />
+    <Content Include="content\assets\css\docs.min.css.map" />
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="submit.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -284,6 +339,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -292,9 +348,7 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="content\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
